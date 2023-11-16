@@ -4,6 +4,9 @@ This is a template for localhost docker development & test
 
 install `mkcert` first
 
+- choco install mkcert(win)
+- brew install mkcert(mac)
+
 ## Docker-HTTPS-ZFile
 
 1. create ur own CA(optinal) & save to ./proxy/certs
