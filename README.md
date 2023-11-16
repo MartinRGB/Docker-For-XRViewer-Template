@@ -4,8 +4,8 @@ This is a template for localhost docker development & test
 
 install `mkcert` first
 
-- choco install mkcert(win)
-- brew install mkcert(mac)
+- `choco install mkcert`(win)
+- `brew install mkcert`(mac)
 
 ## Docker-HTTPS-ZFile
 
@@ -32,7 +32,7 @@ install `mkcert` first
 
 reference -> https://www.howtoforge.com/how-to-create-locally-trusted-ssl-certificates-with-mkcert-on-ubuntu/
 
-## Docker-HTTPS-Nginx-PHP
+## Docker-Https-Nginx-Service-1
 
 1. create ur own CA(optinal) & save to ./proxy/certs
 
