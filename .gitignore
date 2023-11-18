@@ -1,31 +1,24 @@
 conf/*
 log/*
 
-Data/zfile/*
-Data/nextcloud/*
 Data/external/*
-Data/data
-Data/extensions
 Data/service_1/*js
 Data/service_1/*html
+Data/service_1/*txt
 Data/.config
 Data/.local
 Data/.cache
 Data/.profile
 Data/.bashrc
-# Data/next/*
 !Data/phpinfo.php
 !Data/upload.php
 !Data/_h5ai
-!Data/nextcloud/.ocdata
 !Data/service_1/decoder/draco/gltf
-!Data/next/public
-!Data/next/meta.json
 
-Docker-Https-Nginx-PHP/php-log/*
-Docker-Https-ZFile/conf/*
-Docker-Https-ZFile/nginx-log/*
-Docker-Https-Nginx-Service-1/nginx-log/*
-Docker-Https-Nginx-PHP/nginx-log/*
-Docker-Https-NextCloud/nginx-log/*
+xrviewer-nginx-ssl-service/php-log/*
+xrviewer-zfile/conf/*
+xrviewer-zfile/nginx-log/*
+xrviewer-nginx-ssl-service/nginx-log/*
+xrviewer-nginx-ssl-service/proxy/certs/*.pem
+xrviewer-zfile/*.pem
 .DS_Store
