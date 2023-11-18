@@ -8,9 +8,6 @@ services:
     volumes:
       - ./conf:/root/.zfile-v4
       - ../Data/external:/root/zfile/figma
-      - ../Data/next:/root/zfile/next
-      # - ../Data/zfile/test:/root/zfile/data/test
-      # - ../Data/zfile/figma:/root/zfile/data/figma
     restart: always
   proxy:
     image: nginx:latest
@@ -22,9 +19,6 @@ services:
       - ./proxy/conf/nginx.conf:/etc/nginx/nginx.conf
       - ./proxy/certs:/etc/nginx/certs
       - ./nginx-log:/etc/nginx/logs
-      # - ##### original
-      # - ./proxy/legacy/conf/nginx.conf:/etc/nginx/nginx.conf
-      # - ./proxy/legacy/certs:/etc/nginx/certs
     depends_on:
       - zfile
 
