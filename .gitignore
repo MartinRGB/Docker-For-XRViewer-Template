@@ -20,5 +20,5 @@ xrviewer-zfile/conf/*
 xrviewer-zfile/nginx-log/*
 xrviewer-nginx-ssl-service/nginx-log/*
 xrviewer-nginx-ssl-service/proxy/certs/*.pem
-xrviewer-zfile/*.pem
+xrviewer-zfile/proxy/certs/*.pem
 .DS_Store
