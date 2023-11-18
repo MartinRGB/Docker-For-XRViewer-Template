@@ -6,7 +6,12 @@ install `mkcert` first
 
 - `choco install mkcert`(win)
 - `brew install mkcert`(mac)
-- `sudo apt-get install mkcert`(linux)
+
+make sure docker is installed,then get docker's ip address:
+
+windows:
+
+<img src="https://github.com/MartinRGB/Docker-For-XRViewer-Template/assets/7036706/52261f75-eee8-4143-905d-6fae8c2a640d" width="50%" height="50%">
 
 ## xrviewer-zfile
 
@@ -29,7 +34,12 @@ install `mkcert` first
 4. setup
     ```docker-compose up -d```
 
-5. 本地存储 -> 文件路径 `/root/zfile/figma`
+5. <img src="https://github.com/MartinRGB/Docker-For-XRViewer-Template/assets/7036706/5c915623-16c5-432c-bf9d-208eff538832" width="50%" height="50%">
+
+6. 本地存储 -> 文件路径 `/root/zfile/figma`
+  
+    <img src="https://github.com/MartinRGB/Docker-For-XRViewer-Template/assets/7036706/9aeaf9ac-451b-46a5-b8a3-654e10d66fd1" width="50%" height="50%">
+
 
 reference -> https://www.howtoforge.com/how-to-create-locally-trusted-ssl-certificates-with-mkcert-on-ubuntu/
 
@@ -53,4 +63,8 @@ reference -> https://www.howtoforge.com/how-to-create-locally-trusted-ssl-certif
 
 4. setup
     ```docker-compose up -d```
+
+5. site will be like this   
+
+   <img src="https://github.com/MartinRGB/Docker-For-XRViewer-Template/assets/7036706/c4e0c20d-8de8-4e42-a58e-ce1cc4c86c62" width="50%" height="50%">
     
