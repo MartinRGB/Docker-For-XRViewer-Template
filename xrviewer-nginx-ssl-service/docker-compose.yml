@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  proxy:
+    image: nginx:latest
+    container_name: nginx-ssl
+    ports:
+      - 8222:8222
+      - 441:441
+    volumes:
+      - ./proxy/conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./proxy/certs:/etc/nginx/certs
+      - ./nginx-log:/etc/nginx/logs
+      - ../Data:/var/www/html/
+      - /etc/localtime:/etc/localtime:ro  #可与宿主机共享时区
+      - /etc/timezone:/etc/timezone:ro  #作用同上
+      - /etc/letsencrypt:/etc/letsencrypt
+    networks:
+      - internal
+  php:
+    image: php:fpm-alpine
+    container_name: php-ssl
+    networks:
+      - internal
+    volumes:
+      - ../Data:/var/www/html/
+      - ./php-log/php.log:/var/log/fpm-php.www.log
+      # - ./php-config/php-fpm.d/www.conf:/usr/local/etc/php-fpm.d/www.conf
+networks:
+  internal:
+    driver: bridge
